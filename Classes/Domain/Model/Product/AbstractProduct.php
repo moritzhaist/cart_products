@@ -30,6 +30,21 @@ abstract class AbstractProduct extends AbstractEntity
      */
     protected $description = '';
 
+    /**
+     * @var string
+     */
+    protected $subtitle = '';
+
+    public function getSubtitle(): string
+    {
+        return $this->subtitle;
+    }
+
+    public function setSubtitle(string $subtitle): void
+    {
+        $this->subtitle = $subtitle;
+    }
+
     public function getSku(): string
     {
         return $this->sku;
